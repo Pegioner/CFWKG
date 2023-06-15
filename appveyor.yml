@@ -4,7 +4,7 @@ image:
 - Ubuntu
 
 skip_branch_with_pr: true
-stack: python 3.10
+stack: python 3.11
 
 environment:
   GITHUB_TOKEN:
@@ -14,7 +14,7 @@ install:
 - pip install -r requirements.txt
 
 build_script:
-- flet pack main.py --name counter --icon icon.png --product-name counter --product-version "1.2.3" --copyright "Copyright (c) 2022 YourCompany Inc."
+- flet pack main.py --name CFWKG --icon icon.png --product-name CFWKG --product-version "1.0.5" --copyright "Copyright (c) 2023 Pegioner Inc."
 
 test: off
 
@@ -35,10 +35,10 @@ for:
     - image: Visual Studio 2019
 
   after_build:
-  - 7z a counter-windows.zip %CD%\dist\*.exe
+  - 7z a CFWKG-windows.zip %CD%\dist\*.exe
 
   artifacts:
-  - path: counter-windows.zip
+  - path: CFWKG-windows.zip
 
 #
 #   macOS package
@@ -49,10 +49,10 @@ for:
     - image: macOS
 
   after_build:
-  - tar -czvf counter-macos.tar.gz -C dist counter.app
+  - tar -czvf CFWKG-macos.tar.gz -C dist CFWKG.app
 
   artifacts:
-  - path: counter-macos.tar.gz
+  - path: CFWKG-macos.tar.gz
 
 #
 #   Linux package
@@ -63,8 +63,8 @@ for:
     - image: Ubuntu
 
   after_build:
-  - tar -czvf counter-linux.tar.gz -C dist counter
+  - tar -czvf CFWKG-linux.tar.gz -C dist counter
 
   artifacts:
-  - path: counter-linux.tar.gz
+  - path: CFWKG-linux.tar.gz
 
