@@ -14,7 +14,7 @@ install:
 - pip install -r requirements.txt
 
 build_script:
-- flet pack main.py --name CFWKG --icon icon.png --product-name CFWKG --product-version "1.0.6" --copyright "Copyright (c) 2023 Pegioner Inc."
+- flet pack main.py --name CFWKG --icon icon.png --product-name CFWKG --product-version "1.0" --copyright "Copyright (c) 2023 Pegioner Inc."
 
 test: off
 
