@@ -8,7 +8,7 @@ stack: python 3.11
 
 environment:
   GITHUB_TOKEN:
-    secure: w3lizaGK9J/Lz06fJDEat6XghIN44nvpro0pZPxEXpipQP6BOQ2E88um6fVE8VC6I3jCPEi2I3D5JcROC699rBG1mdkTwwc0ICYNLUkaVopDuWGuI9VEFfPfFEoHHFbk
+    secure: 3/6MwYYPqPL8Vi5fpxJpiaIZo5PntHlagClGkxlwbOY/sbCNNSHhtS0wFCLMlIv3
 
 install:
 - pip install -r requirements.txt
